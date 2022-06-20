@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <router-view />
+    <main>
+      <router-view />
+    </main>
   </div>
 </template>
 <script>
@@ -9,4 +11,10 @@ export default {};
 
 <style lang="css">
 @import "../src/assets/style/style.css";
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 </style>
