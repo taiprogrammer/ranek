@@ -6,10 +6,9 @@
         :src="product.fotos[0].src"
         :alt="product.nome[0]"
       />
-      <p class="preco">{{ product.preco }}</p>
       <h2 class="titulo">{{ product.nome }}</h2>
+      <p class="preco">{{ product.preco }}</p>
       <p class="descricao">{{ product.descricao }}</p>
-      {{ product }}
     </div>
   </section>
 </template>
@@ -19,6 +18,7 @@ export default {
   data() {
     return {
       products: new Array(),
+      productsPerPage: 9,
     };
   },
   computed: {
@@ -27,17 +27,23 @@ export default {
       for (let key in this.$route.query) {
         queryString += `&${key}=${this.$route.query[key]}`;
       }
-      return queryString;
+      return `/produtos/?_limit=${this.productsPerPage}${queryString}`;
     },
   },
   methods: {
     getProdutos() {
+      // /produtos
       api
-        .get("/produtos")
+        .get(this.url)
         .then((response) => {
           this.products = response.data;
         })
         .catch((error) => console.log(error));
+    },
+  },
+  watch: {
+    url() {
+      this.getProdutos();
     },
   },
   mounted() {
