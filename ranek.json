@@ -1,0 +1,34 @@
+{
+    "usuario": [
+        {
+            "id": "andre@origramid.com",
+            "nome": "André Rafael",
+            "senha": "123",
+            "rua": "Rua Ali Perto",
+            "cep": "12345678",
+            "numero": "25",
+            "estado": "RJ",
+            "cidade": "Rio de Janeiro"
+        }
+    ],
+    "produtos": [
+        {
+            "id": "notebook",
+            "nome": "Notebook",
+            "usuario_id": "andre@origramid.com",
+            "preco": "4999",
+            "vendido": "false",
+            "descricao": "Este é um Notebook novo.",
+            "fotos": null
+        },
+        {
+            "id": "smartphone",
+            "nome": "Smartphone",
+            "usuario_id": "andre@origramid.com",
+            "preco": "1999",
+            "vendido": "false",
+            "descricao": "Este é um Smartphone novo.",
+            "fotos": null
+        }
+    ]
+}
