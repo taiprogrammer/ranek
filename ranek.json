@@ -1,7 +1,7 @@
 {
     "usuario": [
         {
-            "id": "andre@origramid.com",
+            "id": "taiza@marques.com",
             "nome": "André Rafael",
             "senha": "123",
             "rua": "Rua Ali Perto",
@@ -15,7 +15,7 @@
         {
             "id": "notebook",
             "nome": "Notebook",
-            "usuario_id": "andre@origramid.com",
+            "usuario_id": "taiza@marques.com",
             "preco": "4999",
             "vendido": "false",
             "descricao": "Este é um Notebook novo.",
@@ -24,10 +24,37 @@
         {
             "id": "smartphone",
             "nome": "Smartphone",
-            "usuario_id": "andre@origramid.com",
+            "usuario_id": "taiza@marques.com",
             "preco": "1999",
             "vendido": "false",
             "descricao": "Este é um Smartphone novo.",
+            "fotos": null
+        },
+        {
+            "id": "tablet",
+            "nome": "Tablet",
+            "usurio": "taiza@marques.com",
+            "preco": "899",
+            "vandido": "false",
+            "descricao": "Este é um Tablet novo.",
+            "fotos": null
+        },
+        {
+            "id": "smartwatch",
+            "nome": "Smartwatch",
+            "usurio": "taiza@marques.com",
+            "preco": "200",
+            "vandido": "false",
+            "descricao": "Este é um Smartwatch novo.",
+            "fotos": null
+        },
+        {
+            "id": "speaker",
+            "nome": "Speaker",
+            "usurio": "taiza@marques.com",
+            "preco": "300",
+            "vandido": "false",
+            "descricao": "Este é um Speaker novo.",
             "fotos": null
         }
     ]

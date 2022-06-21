@@ -9,7 +9,7 @@
       <p class="preco">{{ product.preco }}</p>
       <h2 class="titulo">{{ product.nome }}</h2>
       <p class="descricao">{{ product.descricao }}</p>
-      <!-- {{ product }} -->
+      {{ product }}
     </div>
   </section>
 </template>
@@ -20,6 +20,15 @@ export default {
     return {
       products: new Array(),
     };
+  },
+  computed: {
+    url() {
+      let queryString = "";
+      for (let key in this.$route.query) {
+        queryString += `&${key}=${this.$route.query[key]}`;
+      }
+      return queryString;
+    },
   },
   methods: {
     getProdutos() {
