@@ -99,7 +99,4 @@ export default {
   color: #e80;
   font-weight: bold;
 }
-
-.sem-resultados {
-}
 </style>
