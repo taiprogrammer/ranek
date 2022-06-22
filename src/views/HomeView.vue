@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div class="container-page">
     <header-component />
     <section>
       <h1>Compre ou Venda</h1>
       <search-component />
       <list-products />
     </section>
-    <!-- <footer-component /> -->
+    <footer-component />
   </div>
 </template>
 
@@ -14,13 +14,13 @@
 import ListProducts from "@/components/ListProducts.vue";
 import SearchComponent from "@/components/SearchComponent.vue";
 import HeaderComponent from "@/components/HeaderComponent.vue";
-// import FooterComponent from "@/components/FooterComponent.vue";
+import FooterComponent from "@/components/FooterComponent.vue";
 export default {
   name: "HomeView",
   components: {
     ListProducts,
     HeaderComponent,
-    // FooterComponent,
+    FooterComponent,
     SearchComponent,
   },
 };
@@ -32,4 +32,9 @@ h1 {
   margin-top: 40px;
   text-align: center;
 }
+
+/* .container-page {
+  position: relative;
+  max-height: 100vh;
+} */
 </style>

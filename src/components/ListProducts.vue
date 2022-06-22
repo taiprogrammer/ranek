@@ -13,19 +13,25 @@
           <p class="descricao">{{ product.descricao }}</p>
         </router-link>
       </div>
+      <products-pagination
+        :totalProducts="totalProducts"
+        :productsPerPage="productsPerPage"
+      />
     </div>
-    <div v-else-if="product && products.length === 0">
-      <p>Nenhum produto encontrado</p>
+    <div v-else-if="products && products.length === 0">
+      <p class="sem-referencias">Nenhum produto encontrado</p>
     </div>
   </section>
 </template>
 <script>
 import { api } from "@/services/services";
+import ProductsPagination from "@/components/ProductsPagination.vue";
 export default {
   data() {
     return {
       products: new Array(),
       productsPerPage: 9,
+      totalProducts: 0,
     };
   },
   computed: {
@@ -39,11 +45,12 @@ export default {
   },
   methods: {
     getProdutos() {
-      // /produtos
       api
         .get(this.url)
         .then((response) => {
           this.products = response.data;
+          console.log(response);
+          this.totalProducts = Number(response.headers["x-total-count"]);
         })
         .catch((error) => console.log(error));
     },
@@ -55,6 +62,9 @@ export default {
   },
   mounted() {
     this.getProdutos();
+  },
+  components: {
+    ProductsPagination,
   },
 };
 </script>
@@ -98,5 +108,9 @@ export default {
 .preco {
   color: #e80;
   font-weight: bold;
+}
+
+.sem-referencias {
+  text-align: center;
 }
 </style>

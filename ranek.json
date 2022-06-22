@@ -56,6 +56,15 @@
             "vandido": "false",
             "descricao": "Este é um Speaker novo.",
             "fotos": null
+        },
+        {
+            "id": "airdots",
+            "nome": "Airdots",
+            "usuario": "taiza@marques.com",
+            "preco": "80",
+            "vendido": "false",
+            "descricao": "Este é um Airdots novo",
+            "fotos": null
         }
     ]
 }
