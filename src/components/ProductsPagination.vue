@@ -1,8 +1,6 @@
 <template>
   <div>
-    <!-- <p>Páginas {{ productsPerPage }} {{ totalProducts }}</p> -->
-    {{ totalPages }}
-    <ul>
+    <ul v-if="totalProducts > 1">
       <li v-for="(page, index) in totalProducts" :key="index">
         <router-link :to="{ query: { _page: page } }">{{ page }}</router-link>
       </li>
@@ -30,3 +28,23 @@ export default {
   },
 };
 </script>
+<style scoped>
+li {
+  display: inline-block;
+}
+
+li a {
+  padding: 4px 8px;
+  border-radius: 2px;
+  margin: 4px;
+  border: 1px solid #87f;
+}
+
+li a.router-link-exact-active {
+  border: 1px solid rgb(84, 57, 255);
+}
+
+ul {
+  grid-column: 1 / -1;
+}
+</style>

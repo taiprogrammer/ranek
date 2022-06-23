@@ -2,13 +2,13 @@
     "usuario": [
         {
             "id": "taiza@marques.com",
-            "nome": "André Rafael",
+            "nome": "Taiza Marques",
             "senha": "123",
             "rua": "Rua Ali Perto",
             "cep": "12345678",
             "numero": "25",
-            "estado": "RJ",
-            "cidade": "Rio de Janeiro"
+            "estado": "SP",
+            "cidade": "São Paulo"
         }
     ],
     "produtos": [

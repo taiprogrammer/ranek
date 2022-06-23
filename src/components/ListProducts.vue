@@ -30,7 +30,7 @@ export default {
   data() {
     return {
       products: new Array(),
-      productsPerPage: 9,
+      productsPerPage: 3,
       totalProducts: 0,
     };
   },
