@@ -6,7 +6,6 @@
       <search-component />
       <list-products />
     </section>
-    <!-- <footer-component /> -->
   </div>
 </template>
 
@@ -14,13 +13,11 @@
 import ListProducts from "@/components/ListProducts.vue";
 import SearchComponent from "@/components/SearchComponent.vue";
 import HeaderComponent from "@/components/HeaderComponent.vue";
-// import FooterComponent from "@/components/FooterComponent.vue";
 export default {
   name: "HomeView",
   components: {
     ListProducts,
     HeaderComponent,
-    // FooterComponent,
     SearchComponent,
   },
 };

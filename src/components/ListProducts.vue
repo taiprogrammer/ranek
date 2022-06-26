@@ -1,31 +1,41 @@
 <template>
   <section class="produtos-container">
-    <div v-if="products && products.length > 0" class="produtos">
-      <div v-for="(product, index) in products" :key="index" class="produto">
-        <router-link to="/">
-          <img
-            v-if="product.fotos"
-            :src="product.fotos[0].src"
-            :alt="product.nome[0]"
-          />
-          <h2 class="titulo">{{ product.nome }}</h2>
-          <p class="preco">{{ product.preco }}</p>
-          <p class="descricao">{{ product.descricao }}</p>
-        </router-link>
+    <transition mode="out-in">
+      <div
+        v-if="products && products.length > 0"
+        class="produtos"
+        key="product"
+      >
+        <div v-for="(product, index) in products" :key="index" class="produto">
+          <router-link to="/">
+            <img
+              v-if="product.fotos"
+              :src="product.fotos[0].src"
+              :alt="product.nome[0]"
+            />
+            <h2 class="titulo">{{ product.nome }}</h2>
+            <p class="preco">{{ product.preco }}</p>
+            <p class="descricao">{{ product.descricao }}</p>
+          </router-link>
+        </div>
+        <products-pagination
+          :totalProducts="totalProducts"
+          :productsPerPage="productsPerPage"
+        />
       </div>
-      <products-pagination
-        :totalProducts="totalProducts"
-        :productsPerPage="productsPerPage"
-      />
-    </div>
-    <div v-else-if="products && products.length === 0">
-      <p class="sem-referencias">Nenhum produto encontrado</p>
-    </div>
+      <div v-else-if="!products && products.length === 0" key="no-results">
+        <p class="sem-referencias">Nenhum produto encontrado</p>
+      </div>
+      <div v-else key="charging">
+        <charging-page-component />
+      </div>
+    </transition>
   </section>
 </template>
 <script>
 import { api } from "@/services/services";
 import ProductsPagination from "@/components/ProductsPagination.vue";
+import ChargingPageComponent from "./ChargingPageComponent.vue";
 export default {
   data() {
     return {
@@ -45,14 +55,17 @@ export default {
   },
   methods: {
     getProdutos() {
-      api
-        .get(this.url)
-        .then((response) => {
-          this.products = response.data;
-          console.log(response);
-          this.totalProducts = Number(response.headers["x-total-count"]);
-        })
-        .catch((error) => console.log(error));
+      this.products = null;
+      setTimeout(() => {
+        api
+          .get(this.url)
+          .then((response) => {
+            this.products = response.data;
+            console.log(response);
+            this.totalProducts = Number(response.headers["x-total-count"]);
+          })
+          .catch((error) => console.log(error));
+      }, 1500);
     },
   },
   watch: {
@@ -65,6 +78,7 @@ export default {
   },
   components: {
     ProductsPagination,
+    ChargingPageComponent,
   },
 };
 </script>
