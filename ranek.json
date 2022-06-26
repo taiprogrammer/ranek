@@ -16,7 +16,7 @@
             "id": "notebook",
             "nome": "Notebook",
             "usuario_id": "taiza@marques.com",
-            "preco": "4999",
+            "preco": 4999,
             "vendido": "false",
             "descricao": "Este é um Notebook novo.",
             "fotos": null
@@ -25,7 +25,7 @@
             "id": "smartphone",
             "nome": "Smartphone",
             "usuario_id": "taiza@marques.com",
-            "preco": "1999",
+            "preco": 1999,
             "vendido": "false",
             "descricao": "Este é um Smartphone novo.",
             "fotos": null
@@ -34,8 +34,8 @@
             "id": "tablet",
             "nome": "Tablet",
             "usurio": "taiza@marques.com",
-            "preco": "899",
-            "vandido": "false",
+            "preco": 899,
+            "vendido": "false",
             "descricao": "Este é um Tablet novo.",
             "fotos": null
         },
@@ -43,8 +43,8 @@
             "id": "smartwatch",
             "nome": "Smartwatch",
             "usurio": "taiza@marques.com",
-            "preco": "200",
-            "vandido": "false",
+            "preco": 200,
+            "vendido": "false",
             "descricao": "Este é um Smartwatch novo.",
             "fotos": null
         },
@@ -52,8 +52,8 @@
             "id": "speaker",
             "nome": "Speaker",
             "usurio": "taiza@marques.com",
-            "preco": "300",
-            "vandido": "false",
+            "preco": 300,
+            "vendido": "false",
             "descricao": "Este é um Speaker novo.",
             "fotos": null
         },
@@ -61,7 +61,7 @@
             "id": "airdots",
             "nome": "Airdots",
             "usuario": "taiza@marques.com",
-            "preco": "80",
+            "preco": 80,
             "vendido": "false",
             "descricao": "Este é um Airdots novo",
             "fotos": null

@@ -7,14 +7,14 @@
         key="product"
       >
         <div v-for="(product, index) in products" :key="index" class="produto">
-          <router-link to="/">
+          <router-link :to="`/product/${product.id}`">
             <img
               v-if="product.fotos"
               :src="product.fotos[0].src"
               :alt="product.nome[0]"
             />
             <h2 class="titulo">{{ product.nome }}</h2>
-            <p class="preco">{{ product.preco }}</p>
+            <p class="preco">{{ product.preco | numberPrice }}</p>
             <p class="descricao">{{ product.descricao }}</p>
           </router-link>
         </div>

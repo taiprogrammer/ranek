@@ -8,6 +8,13 @@ Vue.config.productionTip = false;
 
 Vue.component("ChargingPageComponent", ChargingPageComponent);
 
+Vue.filter("numberPrice", (value) => {
+  return value.toLocaleString("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  });
+});
+
 new Vue({
   router,
   store,
