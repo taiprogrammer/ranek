@@ -37,7 +37,7 @@ export default {
   },
   methods: {
     loginUser() {
-      alert("Login");
+      this.$store.dispatch("getUser", this.login.email);
     },
   },
   components: {
