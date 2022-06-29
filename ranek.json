@@ -1,70 +1,82 @@
 {
-    "usuario": [
-        {
-            "id": "taiza@marques.com",
-            "nome": "Taiza Marques",
-            "senha": "123",
-            "rua": "Rua Ali Perto",
-            "cep": "12345678",
-            "numero": "25",
-            "estado": "SP",
-            "cidade": "São Paulo"
-        }
-    ],
-    "produtos": [
-        {
-            "id": "notebook",
-            "nome": "Notebook",
-            "usuario_id": "taiza@marques.com",
-            "preco": 4999,
-            "vendido": "false",
-            "descricao": "Este é um Notebook novo.",
-            "fotos": null
-        },
-        {
-            "id": "smartphone",
-            "nome": "Smartphone",
-            "usuario_id": "taiza@marques.com",
-            "preco": 1999,
-            "vendido": "false",
-            "descricao": "Este é um Smartphone novo.",
-            "fotos": null
-        },
-        {
-            "id": "tablet",
-            "nome": "Tablet",
-            "usurio": "taiza@marques.com",
-            "preco": 899,
-            "vendido": "false",
-            "descricao": "Este é um Tablet novo.",
-            "fotos": null
-        },
-        {
-            "id": "smartwatch",
-            "nome": "Smartwatch",
-            "usurio": "taiza@marques.com",
-            "preco": 200,
-            "vendido": "false",
-            "descricao": "Este é um Smartwatch novo.",
-            "fotos": null
-        },
-        {
-            "id": "speaker",
-            "nome": "Speaker",
-            "usurio": "taiza@marques.com",
-            "preco": 300,
-            "vendido": "false",
-            "descricao": "Este é um Speaker novo.",
-            "fotos": null
-        },
-        {
-            "id": "airdots",
-            "nome": "Airdots",
-            "usuario": "taiza@marques.com",
-            "preco": 80,
-            "vendido": "false",
-            "descricao": "Este é um Airdots novo",
-            "fotos": null
-        }
-    ]
+  "usuario": [
+    {
+      "id": "taiza@marques.com",
+      "nome": "Taiza Marques",
+      "senha": "123",
+      "rua": "Rua Ali Perto",
+      "cep": "12345678",
+      "numero": "25",
+      "estado": "SP",
+      "cidade": "São Paulo"
+    },
+    {
+      "id": "admin@admin.com",
+      "name": "Admin",
+      "email": "admin@admin.com",
+      "password": "123456",
+      "cep": "88371875",
+      "street": "Rua João Dalçóquio",
+      "number": "56",
+      "neighbourhood": "Volta Grande",
+      "city": "Navegantes",
+      "state": "SC"
+    }
+  ],
+  "produtos": [
+    {
+      "id": "notebook",
+      "nome": "Notebook",
+      "usuario_id": "taiza@marques.com",
+      "preco": 4999,
+      "vendido": "false",
+      "descricao": "Este é um Notebook novo.",
+      "fotos": null
+    },
+    {
+      "id": "smartphone",
+      "nome": "Smartphone",
+      "usuario_id": "taiza@marques.com",
+      "preco": 1999,
+      "vendido": "false",
+      "descricao": "Este é um Smartphone novo.",
+      "fotos": null
+    },
+    {
+      "id": "tablet",
+      "nome": "Tablet",
+      "usurio": "taiza@marques.com",
+      "preco": 899,
+      "vendido": "false",
+      "descricao": "Este é um Tablet novo.",
+      "fotos": null
+    },
+    {
+      "id": "smartwatch",
+      "nome": "Smartwatch",
+      "usurio": "taiza@marques.com",
+      "preco": 200,
+      "vendido": "false",
+      "descricao": "Este é um Smartwatch novo.",
+      "fotos": null
+    },
+    {
+      "id": "speaker",
+      "nome": "Speaker",
+      "usurio": "taiza@marques.com",
+      "preco": 300,
+      "vendido": "false",
+      "descricao": "Este é um Speaker novo.",
+      "fotos": null
+    },
+    {
+      "id": "airdots",
+      "nome": "Airdots",
+      "usuario": "taiza@marques.com",
+      "preco": 80,
+      "vendido": "false",
+      "descricao": "Este é um Airdots novo",
+      "fotos": null
+    }
+  ]
 }

@@ -7,7 +7,7 @@
       </button>
       <user-form v-else>
         <template>
-          <button class="btn">Criar conta</button>
+          <button class="btn" @click.prevent="createUser">Criar conta</button>
         </template>
       </user-form>
     </transition>
@@ -21,6 +21,11 @@ export default {
     return {
       create: false,
     };
+  },
+  methods: {
+    createUser() {
+      this.$store.dispatch("createUser", this.$store.state.user);
+    },
   },
   components: {
     UserForm,

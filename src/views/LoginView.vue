@@ -38,6 +38,7 @@ export default {
   methods: {
     loginUser() {
       this.$store.dispatch("getUser", this.login.email);
+      this.$router.push({ name: "user", params: { id: this.login.email } });
     },
   },
   components: {
