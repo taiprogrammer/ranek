@@ -61,7 +61,6 @@ export default {
           .get(this.url)
           .then((response) => {
             this.products = response.data;
-            console.log(response);
             this.totalProducts = Number(response.headers["x-total-count"]);
           })
           .catch((error) => console.log(error));

@@ -7,7 +7,7 @@
     <label for="password">Senha</label>
     <input type="password" id="password" name="password" v-model="password" />
     <label for="cep">Cep</label>
-    <input type="text" id="cep" name="cep" v-model="cep" />
+    <input type="text" id="cep" name="cep" v-model="cep" @keyup="getUserCep" />
     <label for="street">Rua</label>
     <input type="text" id="street" name="street" v-model="street" />
     <label for="number">Número</label>
@@ -30,6 +30,7 @@
 </template>
 
 <script>
+import { getCep } from "@/services/services";
 export default {
   name: "UserForm",
   computed: {
@@ -62,7 +63,7 @@ export default {
         return this.$store.state.user.cep;
       },
       set(value) {
-        return this.$store.commit("UPDATE_USER", { sep: value });
+        return this.$store.commit("UPDATE_USER", { cep: value });
       },
     },
     street: {
@@ -104,6 +105,23 @@ export default {
       set(value) {
         return this.$store.commit("UPDATE_USER", { state: value });
       },
+    },
+  },
+  methods: {
+    getUserCep() {
+      const cep = this.cep.replace(/\D/g, "");
+      if (cep.length === 8) {
+        getCep(cep)
+          .then((response) => {
+            this.street = response.data.logradouro;
+            this.neighbourhood = response.data.bairro;
+            this.city = response.data.localidade;
+            this.state = response.data.uf;
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      }
     },
   },
 };
