@@ -32,17 +32,79 @@
 <script>
 export default {
   name: "UserForm",
-  data() {
-    return {
-      name: "",
-      email: "",
-      password: "",
-      cep: "",
-      street: "",
-      number: "",
-      neighbourhood: "",
-      city: "",
-    };
+  computed: {
+    name: {
+      get() {
+        return this.$store.state.user.name;
+      },
+      set(value) {
+        return this.$store.commit("UPDATE_USER", { name: value });
+      },
+    },
+    email: {
+      get() {
+        return this.$store.state.user.email;
+      },
+      set(value) {
+        return this.$store.commit("UPDATE_USER", { email: value });
+      },
+    },
+    password: {
+      get() {
+        return this.$store.state.user.password;
+      },
+      set(value) {
+        return this.$store.commit("UPDATE_USER", { password: value });
+      },
+    },
+    cep: {
+      get() {
+        return this.$store.state.user.cep;
+      },
+      set(value) {
+        return this.$store.commit("UPDATE_USER", { sep: value });
+      },
+    },
+    street: {
+      get() {
+        return this.$store.state.user.street;
+      },
+      set(value) {
+        return this.$store.commit("UPDATE_USER", { street: value });
+      },
+    },
+    number: {
+      get() {
+        return this.$store.state.user.number;
+      },
+      set(value) {
+        return this.$store.commit("UPDATE_USER", { number: value });
+      },
+    },
+    neighbourhood: {
+      get() {
+        return this.$store.state.user.neighbourhood;
+      },
+      set(value) {
+        return this.$store.commit("UPDATE_USER", { neighbourhood: value });
+      },
+    },
+    city: {
+      get() {
+        return this.$store.state.user.city;
+      },
+      set(value) {
+        return this.$store.commit("UPDATE_USER", { city: value });
+      },
+    },
+    state: {
+      get() {
+        return this.$store.state.user.state;
+      },
+      set(value) {
+        return this.$store.commit("UPDATE_USER", { state: value });
+      },
+    },
   },
 };
 </script>
