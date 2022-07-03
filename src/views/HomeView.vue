@@ -29,9 +29,4 @@ h1 {
   margin-top: 40px;
   text-align: center;
 }
-
-/* .container-page {
-  position: relative;
-  max-height: 100vh;
-} */
 </style>

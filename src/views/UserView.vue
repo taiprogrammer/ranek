@@ -84,8 +84,14 @@ a {
 }
 
 a:hover {
-  background: #87f;
+  background: #000;
   border-radius: 4px;
   color: #fff;
+}
+
+a.router-link-exact-active {
+  background: #000;
+  color: #fff;
+  border-radius: 4px;
 }
 </style>

@@ -64,7 +64,7 @@ li a {
 }
 
 li a.router-link-exact-active {
-  border: 1px solid rgb(84, 57, 255);
+  border: 1px solid #000;
 }
 
 ul {

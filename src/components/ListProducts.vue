@@ -18,10 +18,10 @@
             <p class="descricao">{{ product.descricao }}</p>
           </router-link>
         </div>
-        <products-pagination
+        <!-- <products-pagination
           :totalProducts="totalProducts"
           :productsPerPage="productsPerPage"
-        />
+        /> -->
       </div>
       <div v-else-if="!products && products.length === 0" key="no-results">
         <p class="sem-referencias">Nenhum produto encontrado</p>
@@ -34,7 +34,7 @@
 </template>
 <script>
 import { api } from "@/services/services";
-import ProductsPagination from "@/components/ProductsPagination.vue";
+// import ProductsPagination from "@/components/ProductsPagination.vue";
 import ChargingPageComponent from "./ChargingPageComponent.vue";
 export default {
   data() {
@@ -46,11 +46,12 @@ export default {
   },
   computed: {
     url() {
-      let queryString = "";
-      for (let key in this.$route.query) {
-        queryString += `&${key}=${this.$route.query[key]}`;
-      }
-      return `/produtos/?_limit=${this.productsPerPage}${queryString}`;
+      // let queryString = "";
+      // for (let key in this.$route.query) {
+      //   queryString += `&${key}=${this.$route.query[key]}`;
+      // }
+      // return `/produtos/?_limit=${this.productsPerPage}${queryString}`;
+      return `/produtos/`;
     },
   },
   methods: {
@@ -76,7 +77,7 @@ export default {
     this.getProdutos();
   },
   components: {
-    ProductsPagination,
+    // ProductsPagination,
     ChargingPageComponent,
   },
 };

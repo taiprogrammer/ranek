@@ -2,13 +2,13 @@
   "usuario": [
     {
       "id": "taiza@marques.com",
-      "nome": "Taiza Marques",
-      "senha": "123",
-      "rua": "Rua Ali Perto",
+      "name": "Taiza Marques",
+      "password": "123",
+      "street": "Rua Ali Perto",
       "cep": "12345678",
-      "numero": "25",
-      "estado": "SP",
-      "cidade": "São Paulo"
+      "number": "25",
+      "state": "SP",
+      "city": "São Paulo"
     },
     {
       "id": "admin@admin.com",
@@ -21,13 +21,25 @@
       "neighbourhood": "Volta Grande",
       "city": "Navegantes",
       "state": "SC"
+    },
+    {
+      "id": "igor@mail.com",
+      "name": "Igor",
+      "email": "igor@mail.com",
+      "password": "123456",
+      "cep": "69101583",
+      "street": "Rua João Paulo II",
+      "number": "90",
+      "neighbourhood": "Nogueira Júnior",
+      "city": "Itacoatiara",
+      "state": "AM"
     }
   ],
   "produtos": [
     {
       "id": "notebook",
       "nome": "Notebook",
-      "usuario_id": "taiza@marques.com",
+      "user_id": "taiza@marques.com",
       "preco": 4999,
       "vendido": "false",
       "descricao": "Este é um Notebook novo.",
@@ -36,7 +48,7 @@
     {
       "id": "smartphone",
       "nome": "Smartphone",
-      "usuario_id": "taiza@marques.com",
+      "user_id": "taiza@marques.com",
       "preco": 1999,
       "vendido": "false",
       "descricao": "Este é um Smartphone novo.",
@@ -45,7 +57,7 @@
     {
       "id": "tablet",
       "nome": "Tablet",
-      "usurio": "taiza@marques.com",
+      "user_id": "taiza@marques.com",
       "preco": 899,
       "vendido": "false",
       "descricao": "Este é um Tablet novo.",
@@ -54,7 +66,7 @@
     {
       "id": "smartwatch",
       "nome": "Smartwatch",
-      "usurio": "taiza@marques.com",
+      "user_id": "taiza@marques.com",
       "preco": 200,
       "vendido": "false",
       "descricao": "Este é um Smartwatch novo.",
@@ -63,7 +75,7 @@
     {
       "id": "speaker",
       "nome": "Speaker",
-      "usurio": "taiza@marques.com",
+      "user_id": "taiza@marques.com",
       "preco": 300,
       "vendido": "false",
       "descricao": "Este é um Speaker novo.",
@@ -72,7 +84,7 @@
     {
       "id": "airdots",
       "nome": "Airdots",
-      "usuario": "taiza@marques.com",
+      "user_id": "taiza@marques.com",
       "preco": 80,
       "vendido": "false",
       "descricao": "Este é um Airdots novo",
