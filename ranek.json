@@ -1,4 +1,72 @@
 {
+  "transacao": [
+    {
+      "buyer_id": "joao@mail.com",
+      "seller_id": "taiza@marques.com",
+      "product": {
+        "id": "tablet",
+        "nome": "Tablet",
+        "user_id": "taiza@marques.com",
+        "preco": 899,
+        "vendido": "false",
+        "descricao": "Este é um Tablet novo.",
+        "fotos": null
+      },
+      "address": {
+        "cep": "57036371",
+        "street": "Avenida Dona Constança de Góes Monteiro",
+        "number": "90",
+        "neighbourhood": "Jatiúca",
+        "city": "Maceió",
+        "state": "AL"
+      },
+      "id": 1
+    },
+    {
+      "buyer_id": "emilly@mail.com",
+      "seller_id": "taiza@marques.com",
+      "product": {
+        "id": "airdots",
+        "nome": "Airdots",
+        "user_id": "taiza@marques.com",
+        "preco": 80,
+        "vendido": "false",
+        "descricao": "Este é um Airdots novo",
+        "fotos": null
+      },
+      "address": {
+        "cep": "77015405",
+        "street": "ARSO 31 Alameda 17",
+        "number": "98",
+        "neighbourhood": "Plano Diretor Sul",
+        "city": "Palmas",
+        "state": "TO"
+      },
+      "id": 2
+    },
+    {
+      "buyer_id": "emilly@mail.com",
+      "seller_id": "taiza@marques.com",
+      "product": {
+        "id": "speaker",
+        "nome": "Speaker",
+        "user_id": "taiza@marques.com",
+        "preco": 300,
+        "vendido": "false",
+        "descricao": "Este é um Speaker novo.",
+        "fotos": null
+      },
+      "address": {
+        "cep": "77015405",
+        "street": "ARSO 31 Alameda 17",
+        "number": "98",
+        "neighbourhood": "Plano Diretor Sul",
+        "city": "Palmas",
+        "state": "TO"
+      },
+      "id": 3
+    }
+  ],
   "usuario": [
     {
       "id": "taiza@marques.com",
@@ -35,6 +103,30 @@
       "neighbourhood": "Nogueira Júnior",
       "city": "Itacoatiara",
       "state": "AM"
+    },
+    {
+      "id": "emilly@mail.com",
+      "name": "Emilly",
+      "email": "emilly@mail.com",
+      "password": "123456",
+      "cep": "77015405",
+      "street": "ARSO 31 Alameda 17",
+      "number": "98",
+      "neighbourhood": "Plano Diretor Sul",
+      "city": "Palmas",
+      "state": "TO"
+    },
+    {
+      "id": "julia@mail.com",
+      "name": "Julia",
+      "email": "julia@mail.com",
+      "password": "123456",
+      "cep": "65638150",
+      "street": "Rua Antonio Ferreira de Morais",
+      "number": "56",
+      "neighbourhood": "São Francisco II",
+      "city": "Timon",
+      "state": "MA"
     }
   ],
   "produtos": [

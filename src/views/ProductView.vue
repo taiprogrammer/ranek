@@ -12,9 +12,12 @@
           <h1>{{ product.nome }}</h1>
           <p class="price">{{ product.preco | numberPrice }}</p>
           <p class="description">{{ product.descricao }}</p>
-          <buntton class="btn" v-if="product.vendido === 'false'"
-            >Comprar</buntton
-          >
+          <transition mode="out-in" v-if="product.vendido === 'false'">
+            <button class="btn" v-if="!finished" @click="finished = !finished">
+              Comprar
+            </button>
+            <finish-bought v-else :product="product" />
+          </transition>
           <button class="btn" disabled v-else-if="product.vendido === 'true'">
             Produto Vendido
           </button>
@@ -27,6 +30,7 @@
   </div>
 </template>
 <script>
+import FinishBought from "@/components/FinishBought.vue";
 import HeaderComponent from "@/components/HeaderComponent.vue";
 import { api } from "@/services/services.js";
 export default {
@@ -41,6 +45,7 @@ export default {
   data() {
     return {
       product: new Object(),
+      finished: false,
     };
   },
   methods: {
@@ -54,6 +59,7 @@ export default {
     this.getProduct();
   },
   components: {
+    FinishBought,
     HeaderComponent,
   },
 };
