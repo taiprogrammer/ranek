@@ -1,70 +1,26 @@
 {
   "transacao": [
     {
-      "buyer_id": "joao@mail.com",
+      "buyer_id": "admin@admin.com",
       "seller_id": "taiza@marques.com",
       "product": {
-        "id": "tablet",
-        "nome": "Tablet",
+        "id": "smartphone",
+        "nome": "Smartphone",
         "user_id": "taiza@marques.com",
-        "preco": 899,
-        "vendido": "false",
-        "descricao": "Este é um Tablet novo.",
+        "preco": "1999",
+        "vendido": false,
+        "descricao": "Este é um Smartphone novo.",
         "fotos": null
       },
       "address": {
-        "cep": "57036371",
-        "street": "Avenida Dona Constança de Góes Monteiro",
-        "number": "90",
-        "neighbourhood": "Jatiúca",
-        "city": "Maceió",
-        "state": "AL"
+        "cep": "88371875",
+        "street": "Rua João Dalçóquio",
+        "number": "56",
+        "neighbourhood": "Volta Grande",
+        "city": "Navegantes",
+        "state": "SC"
       },
       "id": 1
-    },
-    {
-      "buyer_id": "emilly@mail.com",
-      "seller_id": "taiza@marques.com",
-      "product": {
-        "id": "airdots",
-        "nome": "Airdots",
-        "user_id": "taiza@marques.com",
-        "preco": 80,
-        "vendido": "false",
-        "descricao": "Este é um Airdots novo",
-        "fotos": null
-      },
-      "address": {
-        "cep": "77015405",
-        "street": "ARSO 31 Alameda 17",
-        "number": "98",
-        "neighbourhood": "Plano Diretor Sul",
-        "city": "Palmas",
-        "state": "TO"
-      },
-      "id": 2
-    },
-    {
-      "buyer_id": "emilly@mail.com",
-      "seller_id": "taiza@marques.com",
-      "product": {
-        "id": "speaker",
-        "nome": "Speaker",
-        "user_id": "taiza@marques.com",
-        "preco": 300,
-        "vendido": "false",
-        "descricao": "Este é um Speaker novo.",
-        "fotos": null
-      },
-      "address": {
-        "cep": "77015405",
-        "street": "ARSO 31 Alameda 17",
-        "number": "98",
-        "neighbourhood": "Plano Diretor Sul",
-        "city": "Palmas",
-        "state": "TO"
-      },
-      "id": 3
     }
   ],
   "usuario": [
@@ -134,8 +90,8 @@
       "id": "notebook",
       "nome": "Notebook",
       "user_id": "taiza@marques.com",
-      "preco": 4999,
-      "vendido": "false",
+      "preco": "4999",
+      "vendido": false,
       "descricao": "Este é um Notebook novo.",
       "fotos": null
     },
@@ -143,8 +99,8 @@
       "id": "smartphone",
       "nome": "Smartphone",
       "user_id": "taiza@marques.com",
-      "preco": 1999,
-      "vendido": "false",
+      "preco": "1999",
+      "vendido": false,
       "descricao": "Este é um Smartphone novo.",
       "fotos": null
     },
@@ -152,8 +108,8 @@
       "id": "tablet",
       "nome": "Tablet",
       "user_id": "taiza@marques.com",
-      "preco": 899,
-      "vendido": "false",
+      "preco": "899",
+      "vendido": false,
       "descricao": "Este é um Tablet novo.",
       "fotos": null
     },
@@ -161,8 +117,8 @@
       "id": "smartwatch",
       "nome": "Smartwatch",
       "user_id": "taiza@marques.com",
-      "preco": 200,
-      "vendido": "false",
+      "preco": "200",
+      "vendido": false,
       "descricao": "Este é um Smartwatch novo.",
       "fotos": null
     },
@@ -170,8 +126,8 @@
       "id": "speaker",
       "nome": "Speaker",
       "user_id": "taiza@marques.com",
-      "preco": 300,
-      "vendido": "false",
+      "preco": "300",
+      "vendido": false,
       "descricao": "Este é um Speaker novo.",
       "fotos": null
     },
@@ -179,8 +135,8 @@
       "id": "airdots",
       "nome": "Airdots",
       "user_id": "taiza@marques.com",
-      "preco": 80,
-      "vendido": "false",
+      "preco": "80",
+      "vendido": false,
       "descricao": "Este é um Airdots novo",
       "fotos": null
     }

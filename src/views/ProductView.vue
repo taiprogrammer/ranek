@@ -12,13 +12,13 @@
           <h1>{{ product.nome }}</h1>
           <p class="price">{{ product.preco | numberPrice }}</p>
           <p class="description">{{ product.descricao }}</p>
-          <transition mode="out-in" v-if="product.vendido === 'false'">
+          <transition mode="out-in" v-if="product.vendido === false">
             <button class="btn" v-if="!finished" @click="finished = !finished">
               Comprar
             </button>
             <finish-bought v-else :product="product" />
           </transition>
-          <button class="btn" disabled v-else-if="product.vendido === 'true'">
+          <button class="btn" disabled v-else-if="product.vendido === true">
             Produto Vendido
           </button>
         </div>
