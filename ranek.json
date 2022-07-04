@@ -89,6 +89,15 @@
       "vendido": "false",
       "descricao": "Este é um Airdots novo",
       "fotos": null
+    },
+    {
+      "nome": "Esmalte Fosco Preto Dailus",
+      "preco": "27,90",
+      "descricao": "Esmalte fosco",
+      "fotos": null,
+      "user_id": "taiza@marques.com",
+      "id": "esmalte fosco preto dailus",
+      "vendido": false
     }
   ]
 }
