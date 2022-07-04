@@ -8,6 +8,9 @@
         <product-item-component :products="product">
           <template>
             <p>{{ product.descricao }}</p>
+            <button class="btn" @click="deleteProduct(product.id)">
+              Excluir Produto
+            </button>
           </template>
         </product-item-component>
       </li>
@@ -16,6 +19,7 @@
 </template>
 
 <script>
+import { api } from "@/services/services";
 import { mapState, mapActions } from "vuex";
 import AddProductComponent from "@/components/AddProductComponent.vue";
 import ProductItemComponent from "@/components/ProductItemComponent.vue";
@@ -24,6 +28,16 @@ export default {
   name: "UserProducts",
   methods: {
     ...mapActions(["getUserProducts"]),
+    deleteProduct(id) {
+      api
+        .delete(`/produtos/${id}`)
+        .then(() => {
+          this.getUserProducts();
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
   },
   computed: {
     ...mapState(["login", "user", "products"]),
