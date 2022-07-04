@@ -2,13 +2,15 @@
   "usuario": [
     {
       "id": "taiza@marques.com",
-      "name": "Taiza Marques",
+      "name": "Taiza",
+      "email": "taiza@marques.com",
       "password": "123",
-      "street": "Rua Ali Perto",
-      "cep": "12345678",
-      "number": "25",
-      "state": "SP",
-      "city": "São Paulo"
+      "cep": "04859-360",
+      "street": "Rua Alto da Alegria do Conde",
+      "number": "89",
+      "neighbourhood": "Chácara do Conde",
+      "city": "São Paulo",
+      "state": "SP"
     },
     {
       "id": "admin@admin.com",
