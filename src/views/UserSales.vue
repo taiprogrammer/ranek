@@ -48,7 +48,7 @@ export default {
   methods: {
     getSales() {
       api
-        .get(`/transacao?user_id=${this.user.id}`)
+        .get(`/transacao`)
         .then(({ data }) => {
           this.sales = data;
         })
@@ -83,7 +83,22 @@ h2 {
   margin-bottom: 20px;
 }
 
+span {
+  color: #e80;
+}
+
 .sales-wrapper {
   margin-bottom: 40px;
+}
+
+.delivery {
+  display: grid;
+  grid-template-columns: minmax(100px, 200px) 1fr;
+  grid-gap: 20px;
+  margin-bottom: 60px;
+}
+
+h3 {
+  justify-self: end;
 }
 </style>

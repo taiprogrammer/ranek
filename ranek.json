@@ -21,6 +21,50 @@
         "state": "SC"
       },
       "id": 1
+    },
+    {
+      "buyer_id": "admin@admin.com",
+      "seller_id": "taiza@marques.com",
+      "product": {
+        "id": "speaker",
+        "nome": "Speaker",
+        "user_id": "taiza@marques.com",
+        "preco": "300",
+        "vendido": false,
+        "descricao": "Este é um Speaker novo.",
+        "fotos": null
+      },
+      "address": {
+        "cep": "88371875",
+        "street": "Rua João Dalçóquio",
+        "number": "56",
+        "neighbourhood": "Volta Grande",
+        "city": "Navegantes",
+        "state": "SC"
+      },
+      "id": 2
+    },
+    {
+      "buyer_id": "joao@mail.com",
+      "seller_id": "joao@mail.com",
+      "product": {
+        "nome": "Esmalte Fosco Preto Dailus",
+        "preco": "27",
+        "descricao": "Esmalte lindo cheiroso",
+        "fotos": null,
+        "user_id": "joao@mail.com",
+        "id": "esmalte fosco preto dailus",
+        "vendido": false
+      },
+      "address": {
+        "cep": "64030090",
+        "street": "Quadra Bela Vista",
+        "number": "90",
+        "neighbourhood": "Bela Vista",
+        "city": "Teresina",
+        "state": "PI"
+      },
+      "id": 3
     }
   ],
   "usuario": [
@@ -38,7 +82,7 @@
     },
     {
       "id": "admin@admin.com",
-      "name": "Admin",
+      "name": "Administrador",
       "email": "admin@admin.com",
       "password": "123456",
       "cep": "88371875",
@@ -83,6 +127,18 @@
       "neighbourhood": "São Francisco II",
       "city": "Timon",
       "state": "MA"
+    },
+    {
+      "id": "joao@mail.com",
+      "name": "Joãozinho",
+      "email": "joao@mail.com",
+      "password": "123456",
+      "cep": "64030090",
+      "street": "Quadra Bela Vista",
+      "number": "90",
+      "neighbourhood": "Bela Vista",
+      "city": "Teresina",
+      "state": "PI"
     }
   ],
   "produtos": [
@@ -139,6 +195,15 @@
       "vendido": false,
       "descricao": "Este é um Airdots novo",
       "fotos": null
+    },
+    {
+      "nome": "Esmalte Fosco Preto Dailus",
+      "preco": "27",
+      "descricao": "Esmalte lindo cheiroso",
+      "fotos": null,
+      "user_id": "joao@mail.com",
+      "id": "esmalte fosco preto dailus",
+      "vendido": false
     }
   ]
 }
