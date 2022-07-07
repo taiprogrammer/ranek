@@ -6,7 +6,7 @@
       <label for="price">Preço</label>
       <input type="text" id="price" name="price" v-model="product.preco" />
       <label for="photo">Fotos</label>
-      <input type="file" id="photo" name="photo" ref="photo" />
+      <input type="file" id="photo" name="photo" ref="photo" disabled />
       <label for="description">Descrição</label>
       <textarea
         name="description"
@@ -30,7 +30,7 @@ export default {
         nome: "",
         preco: "",
         descricao: "",
-        fotos: null,
+        // fotos: null,
       },
     };
   },

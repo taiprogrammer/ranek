@@ -125,6 +125,14 @@
       "vendido": false,
       "descricao": "Este é um Airdots novo",
       "fotos": null
+    },
+    {
+      "nome": "Smart TV",
+      "preco": "1340",
+      "descricao": "Teste",
+      "user_id": "admin@admin.com",
+      "id": "smart tv",
+      "vendido": false
     }
   ]
 }

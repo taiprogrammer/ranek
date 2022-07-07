@@ -1,8 +1,9 @@
 <template>
   <section>
     <div class="sales">
-      <h2>Vendas</h2>
-      <div class="sales-wrapper" v-for="(sale, index) in sales" :key="index">
+      <h2>Funcionalidade disponível em breve</h2>
+      <!-- <h2>Vendas</h2> -->
+      <!-- <div class="sales-wrapper" v-for="(sale, index) in sales" :key="index">
         <div v-if="sale.product">
           <product-item-component :products="sale.product">
             <template>
@@ -25,7 +26,7 @@
         <div v-else>
           <h4>Não há nenhuma venda registrada</h4>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>
@@ -33,8 +34,8 @@
 <script>
 import { mapState } from "vuex";
 import { api } from "@/services/services";
-import DeliveryComponent from "@/components/DeliveryComponent.vue";
-import ProductItemComponent from "@/components/ProductItemComponent.vue";
+// import DeliveryComponent from "@/components/DeliveryComponent.vue";
+// import ProductItemComponent from "@/components/ProductItemComponent.vue";
 export default {
   name: "UserSales",
   data() {
@@ -67,10 +68,10 @@ export default {
       this.getSales();
     }
   },
-  components: {
-    DeliveryComponent,
-    ProductItemComponent,
-  },
+  // components: {
+  //   DeliveryComponent,
+  //   ProductItemComponent,
+  // },
 };
 </script>
 
@@ -81,6 +82,7 @@ export default {
 
 h2 {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 span {

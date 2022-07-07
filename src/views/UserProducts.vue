@@ -1,5 +1,9 @@
 <template>
   <section class="user-products">
+    <div class="warning">
+      <img src="../assets/information.svg" alt="" />
+      <p>Funcionalidade de upload de imagens disponível em breve</p>
+    </div>
     <h1>Adicionar Produto</h1>
     <add-product-component />
     <h2>Seus Produtos</h2>
@@ -76,5 +80,18 @@ h2 {
 .list-leave-to {
   opacity: 0;
   transform: translate3d(20px, 0, 0);
+}
+
+.warning {
+  background: #e80;
+  padding: 2px 10px;
+  border-radius: 5px;
+  margin: 20px 0;
+  color: #fff;
+  display: flex;
+}
+
+.warning p {
+  margin-left: 10px;
 }
 </style>
